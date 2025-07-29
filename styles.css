@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #fff;
+    text-align: center;
+    padding: 8rem;
+}
+
+.container{
+    background-color: #ffffff;
+    padding: 5rem;
+    width: 50%;
+    margin: 0 10rem 0 10rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+input{
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 10px;
+    color: #005c6e;
+    font-weight: bold;
+}
+button{
+    padding: 5px;
+    background-color: cornsilk;
+}

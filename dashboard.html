@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+             <h2>Login</h2>
+            <form id="adminForm">
+                <label for="admin">Confirm User</label>
+                <input type="text" name="admin" id="adminUser">
+                <button type="submit">Admin</button>
+            </form>
+        </div>
+
+        <script>
+            document.getElementById('adminForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const admin = document.getElementById('adminUser').value;
+
+            const storedUsername = localStorage.getItem('storedUsername');
+            if (admin === storedUsername) {
+                alert("Mr. " + storedUsername + ", You're welcome.");
+            } else {
+                alert('Invalid credentials. Try again.');
+            }
+            });
+        </script>
+    </body>
+</html>
